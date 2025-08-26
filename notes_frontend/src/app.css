@@ -1,0 +1,76 @@
+:root {
+    /* Theme colors - light, minimalistic */
+    --color-background: #ffffff;
+    --color-surface: #f7f8fa;
+    --color-border: #e5e7eb;
+
+    /* Text */
+    --color-text-primary: #3d3d3d; /* secondary color used for primary text */
+    --color-text-secondary: #6b7280;
+
+    /* Brand */
+    --color-primary: #3366ff;   /* requested primary */
+    --color-secondary: #3d3d3d; /* requested secondary */
+    --color-accent: #ffd600;    /* requested accent */
+
+    /* Component tokens */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
+
+    --sidebar-width: 280px;
+    --header-height: 60px;
+
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body, #app {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+input, textarea, select {
+    font: inherit;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    overflow: hidden;
+    white-space: nowrap;
+}
