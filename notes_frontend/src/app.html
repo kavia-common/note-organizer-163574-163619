@@ -3,9 +3,12 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#3366ff" />
+        <meta name="description" content="Minimalistic notes app with folders and tags" />
         %sveltekit.head%
+        <title>%sveltekit.status% {(import.meta && import.meta.env && import.meta.env.VITE_APP_TITLE) || 'Notes'}</title>
     </head>
     <body>
-        <div>%sveltekit.body%</div>
+        <div id="app">%sveltekit.body%</div>
     </body>
 </html>
